@@ -48,14 +48,22 @@ body {
 }
 
 .card__image {
-  /* height:100%; */
   width: 100%;
   border-radius: 0.25em;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .card__title {
   color: white;
   font-size: 1.5em;
+
+  &:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+  }
 }
 
 .card__description {
@@ -86,27 +94,32 @@ body {
 }
 
 .card__footer {
-    border-top: 0.1em solid var(--Grayish-Blue);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1em;
-    padding-top: 1em;
+  border-top: 0.1em solid var(--Grayish-Blue);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+  padding-top: 1em;
 }
 
 .footer__avatar {
-    width: 2.25em;
-    height: 2.25em;
-    border-radius: 100%;
-    border: solid .1em white;
+  width: 2.25em;
+  height: 2.25em;
+  border-radius: 100%;
+  border: solid 0.1em white;
 }
 
 .footer__text {
-    color: var(--Primary-Blue);
-    font-weight: 400;
+  color: var(--Primary-Blue);
+  font-weight: 400;
 }
 
 .footer__author__name {
-    color: white;
-    font-weight: -600;
+  color: white;
+  font-weight: 600;
+
+  &:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+  }
 }
