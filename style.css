@@ -1,11 +1,11 @@
 /* Variables */
 :root {
-/* Colors */
---Primary-Blue: hsl(215, 51%, 70%);
---Cyan: hsl(178, 100%, 50%);
---Very-Dark-Blue:(main BG): hsl(217, 54%, 11%);
---Dark-Blue: hsl(216, 50%, 16%);/* card bg */
---grayish-Blue: hsl(215, 32%, 27%);/*line*/
+  /* Colors */
+  --Primary-Blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-Dark-Blue: hsl(217, 54%, 11%);
+  --Dark-Blue: hsl(216, 50%, 16%); /* card bg */
+  --Grayish-Blue: hsl(215, 32%, 27%); /*line*/
 }
 
 /* Base */
@@ -18,6 +18,95 @@
 }
 
 html {
-    font-size: 1.125rem; /*18px*/;
-    font-family: "Outfit", sans-serif;
+  font-size: 1.125rem; /*18px*/
+  font-family: "Outfit", sans-serif;
+}
+
+/* Layout */
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Very-Dark-Blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+/* Card */
+.card {
+  width: 100%;
+  background-color: var(--Dark-Blue);
+  border-radius: 0.75em;
+  display: grid;
+  gap: 1em;
+  padding: 1.25em;
+
+  @media (min-width: 20em) {
+    width: calc(20em - 2em);
+  }
+}
+
+.card__image {
+  /* height:100%; */
+  width: 100%;
+  border-radius: 0.25em;
+}
+
+.card__title {
+  color: white;
+  font-size: 1.5em;
+}
+
+.card__description {
+  color: var(--Primary-Blue);
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.card__details__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__update,
+.card__timespan {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5em;
+}
+
+.card__update {
+  color: var(--Cyan);
+}
+
+.card__timespan {
+  color: var(--Primary-Blue);
+}
+
+.card__footer {
+    border-top: 0.1em solid var(--Grayish-Blue);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.footer__avatar {
+    width: 2.25em;
+    height: 2.25em;
+    border-radius: 100%;
+    border: solid .1em white;
+}
+
+.footer__text {
+    color: var(--Primary-Blue);
+    font-weight: 400;
+}
+
+.footer__author__name {
+    color: white;
+    font-weight: -600;
 }
