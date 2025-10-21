@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+/* Colors */
+--Primary-Blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+--Very-Dark-Blue:(main BG): hsl(217, 54%, 11%);
+--Dark-Blue: hsl(216, 50%, 16%);/* card bg */
+--grayish-Blue: hsl(215, 32%, 27%);/*line*/
+}
+
 /* Base */
 *,
 *::before,
@@ -5,4 +15,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+    font-size: 1.125rem; /*18px*/;
+    font-family: "Outfit", sans-serif;
 }
