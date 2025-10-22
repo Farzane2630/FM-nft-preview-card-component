@@ -90,11 +90,22 @@ Users should be able to:
 }
 ```
 
+2. Provide alternatives for users who prefer reduced motion to prevent motion sickness and other accessibility issues.
+
+```css
+.card__image__overlay {
+  transition: 0.5s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .card__image__overlay {
+    transition: none;
+  }
+}
+```
 
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
 
 ### Useful resources
 
@@ -108,4 +119,3 @@ Use this section to outline areas that you want to continue focusing on in futur
 - StackOverflow - [@farzane-kazemi](https://stackoverflow.com/users/19888516/farzane-kazemi)
 
 ## Acknowledgments
-
